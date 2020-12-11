@@ -1,5 +1,6 @@
 # Basics!
  
+## Bu Kısımda Fazla Kod Örneği Göremeyebilirsiniz.
 <details>
 <summary>Değişkenler :</summary> 
  
@@ -57,11 +58,65 @@ String yani dizgi veri tipi içerisinde metinsel ifadeler barındırır.
 <details>
 <summary>Mantıksal Operatörler :</summary> 
 
-### == İki verinin eşitliği.     
-### != İki verinin eşitsizliği.  
-### > 1. verinin 2. veriden büyüklüğü.
-### < 1. verinin 2. veriden küçüklüğü.  
-### <= 1. verinin 2. veriden küçük veya eşitliği.  
-### >= 1. verinin 2. veriden büyük veya eşitliği.  
+### && VE operatörüdür. 2 koşulda doğruysa true değer verir.      
+### || VEYA operatörüdür. 2 koşuldan ikisi veya biri doğru ise true değer verir.   
+### !  DEĞİL operatörüdür. Koşul sonucunun tersini verir.  
+</details>
 
+<details>
+<summary>Atama Operatörler :</summary> 
+
+### = Atama Operatörüdür.     
+### += Kendiyle toplar.  
+### -= Kendinden çıkarır.
+### *= Kendiyle çarpar.  
+### /= Kendine böler.  
+### %= Kendine bölümünden kalanı atar.  
+</details>
+
+<details>
+<summary>Değişkenler ve Atanması :</summary> 
+
+```go
+var isim string = “Ali”
+var yas int = 20
+var ogrenci bool = true
+``` 
+
+ #### Değişkenler içerisinde değer barındırarak RAM’e kaydettiğimiz bilgilerdir. Değişkenler programımızın işleyişinde önemli bir role sahiptir. Değişkenleri şu şekillerde atayabiliriz. Değişkenler var ifadesi ile atanır. Tabi ki zorunlu değildir.  
+
+### En basit şekilde değişken ataması yapmak istersek;  
+
+```go
+isim:=”Ali”
+yas:=20
+ogrenci:=true
+```
+
+</details>
+
+<details>
+<summary>Sabitler :</summary> 
+
+### Sabitler de değişkenler gibi değer alır. Fakat adından da anlaşılabileceği üzere verilen değer daha sonradan değiştirilemez.
+  
+```go
+const isim string = “Ali”
+const isim=”Veli”
+``` 
+
+</details>
+
+<details>
+<summary>Tür Dönüşümü  :  </summary>
+
+### Tür dönüşümü şu şekilde gerçekleştirilir.   
+   tür(değer)
+### Örnek olarak bakmak gerekir ise;
+
+```go
+i := 42
+f := float64(i)
+u := uint(f)
+```
 </details>

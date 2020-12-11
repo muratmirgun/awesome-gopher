@@ -3,7 +3,7 @@
 <details>
 <summary>Değişkenler :</summary> 
  
-## Integer Türler
+### Integer Türler
 ### Öncelikle tüm integer türleri bir görelim;
   -int, int8, int16, int32, int64  
   -uint, uint8, uint16, uint32, uint64, uintptr
@@ -25,4 +25,43 @@ complex128: Gerçel float64 ve sanal sayı değeri barındırır.
 Boolean yani mantıksal veri tipi bir durumun var olması halinde olumlu (true) değer, var olmaması halinde olumsuz (false) değer alan veri tipidir.
 ### STRING VERİ TİPİ   
 String yani dizgi veri tipi içerisinde metinsel ifadeler barındırır. 
+</details>
+
+
+
+<details>
+<summary>Aritmetik Operatörler :</summary> 
+
+### + Toplar.     
+### - Çıkartır.  
+### * Çarpar.
+### / Böler.  
+### % Bölümden Kalanı Verme.  
+### ++ 1 Arttırır.  
+### -- 1 Eksiltir.  
+
+</details>
+
+<details>
+<summary>İlişkisel Operatörler :</summary> 
+
+### == İki verinin eşitliği.     
+### != İki verinin eşitsizliği.  
+### > 1. verinin 2. veriden büyüklüğü.
+### < 1. verinin 2. veriden küçüklüğü.  
+### <= 1. verinin 2. veriden küçük veya eşitliği.  
+### >= 1. verinin 2. veriden büyük veya eşitliği.  
+
+</details>
+
+<details>
+<summary>Mantıksal Operatörler :</summary> 
+
+### == İki verinin eşitliği.     
+### != İki verinin eşitsizliği.  
+### > 1. verinin 2. veriden büyüklüğü.
+### < 1. verinin 2. veriden küçüklüğü.  
+### <= 1. verinin 2. veriden küçük veya eşitliği.  
+### >= 1. verinin 2. veriden büyük veya eşitliği.  
+
 </details>

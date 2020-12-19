@@ -169,3 +169,142 @@ Boş tanımlama işlemleri çoğunlukla Golang’ta programcılar tarafından ha
 
 
 </details>
+
+<details>
+<summary>Döngüler</summary>
+
+# Döngüler
+
+Programlama dillerinde while, do while ve for döngüleri vardır ama golangda tek for döngüsü vardır.
+
+### Standart For Kullanımı:   
+```go 
+package main
+
+import "fmt"
+
+func main() {
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+}
+```
+
+### SADECE KOŞUL BELİRTEREK KULLANMA
+bu kullanımda for while ile aynı mantıkta çalışır. parametre olarak koşul belirtilir.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	count := 0
+	for count < 10 {
+		fmt.Println(count)
+		deger++
+	}
+}
+```
+</details>
+
+<details>
+<summary>If-Else</summary>
+
+### If-Else
+
+Tğrkçe karşılık olarak bakarsan if = eğer, Else = yoksa anlamına gelir ve bizim golangda koşul durumları oluşturmamızı sağlar.   
+Basit olarak syntax yapısı böyledir :   
+```go
+if koşul {
+	//Koşul sağlandığında yapılacak işlemler
+} else {
+	//Koşul sağlanmadığında yapılacak işlemler
+}
+```
+### else if kullanımı:
+
+If-Else akışında birden fazla koşul kontrolü ekleyebiliriz. Bunu else if deyimi ile yapabiliriz. Kısaca bakacak olursak;    
+```go
+i := 5
+if i == 5 {
+ fmt.Println("i'nin değeri 5'tir.")
+} else if i==3{
+ fmt.Println("i'nin değeri 3'tür.")
+}else{
+ fmt.Println("i'nin değeri belirsiz.")
+}
+```
+</details>
+
+<details>
+<summary>Switch Yapısı</summary>
+
+### Switch Yapısı:
+
+Türkçe karşılığı anahtardır. Switch deyimi if-else gibi koşul amaçlı çalışır.Case deyimi durumu ifade eder.
+
+```go
+package main
+import "fmt"
+func main() {
+ i := 5
+ switch i {
+  case 5:
+   fmt.Println("i eşittir 5")
+  case 10:
+   fmt.Println("i eşittir 10")
+  case 15:
+   fmt.Println("i eşittir 15")
+ }
+}
+```
+Switch’te koşulların gerçekleşmediği zaman işlem uygulamak istiyorsak bunu default terimi ile yaparız. Örnek;   
+```go
+i := 5
+switch i {
+ case 5:
+  fmt.Println("i eşittir 5")
+ default:
+  fmt.Println("i bilinmiyor")
+}
+```
+### Koşulsuz Switch
+Switch’in tanımını daha iyi anlayabilmeniz için koşulsuz switch kullanımına örnek verelim. Bu yöntemde switch deyiminin yanına koşul girmek yerine case deyiminin yanına koşul giriyoruz.   
+```go
+package main
+import "fmt"
+func main() {
+ i := 5
+ switch {
+  case i == 5: //i=5 olduğu için diğer case’ler sorgulanmaz
+   fmt.Println("i eşittir 5")
+  case i < 10:
+   fmt.Println("i küçüktür 10")
+  case i > 3:
+   fmt.Println("i büyüktür 3")
+ }
+}
+```
+</details>
+
+<details>
+<summary>Defer Fonksiyonu</summary>
+
+### Defer Fonksiyonu:
+Defer kelimesinin Türkçe’deki karşılığı ertelemektir. Bu deyimi yapacağımız işlemin başına eklersek o işlemi içerisinde bulunduğu fonksiyonun içindeki işlemlerden sonra çalıştırır.   
+```go
+package main
+import "fmt"
+func main() {
+ defer fmt.Println("İlk Cümle")
+ fmt.Println("İkinci Cümle")
+}
+```
+I/O:
+```
+İkinci Cümle
+İlk Cümle
+```
+gibi bir basit örnekler açıkladık.
+</details>
